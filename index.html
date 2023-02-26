@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="site-header"><!-- заголовок -->
+  		<div class="wrapper site-header__wrapper">
+    		<div class="header-main-wrap">
+			<div class="fx header-main">
+				<a class="header-main-logo" href="/">
+					<img src="/images/logo.png" onerror="this.onerror=null; this.src='http://www.avto-vag.ru/'" alt="">
+				</a>				
+
+				<div class="header-main-search suggestions">
+					<div class="suggestions__list none"></div>
+					<div class="suggestions__input_group">
+						<input class="input-form search-form__input suggestions__input" placeholder="Наименование, номер запчасти" value="">
+						<div class="suggestions__autocomplete">
+							<span class="suggestion__autocomplete_text"></span><span class="suggestion__autocomplete_value"></span>
+						</div>
+						<button class="search-button search-form__btn_uni_search" type="button">
+							<svg width="18px" height="18px" viewBox="0 0 512 512">
+							<path fill="#971616" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path>
+						</svg>
+						</button>
+					</div>
+				</div>
+				<div class="header-contacts">
+				  
+        
+        <a href="tel:+74955054665">+7(495) 505 46 65 (гор.)</a>
+        <a href="tel:+79170973969">+7(917) 097 39 69 (сот.)</a>
+        <a href="https://wa.me/79255054665?text=Добрый день!%20Есть%20вопрос%20по%20запчастям.">+7(925) 505 46 65 (чат)</a>
+    
+				</div>
+				
+				<a href="/" class="cart-fixed header-icon header-cart-icon" id="navbar-cart-link" data-container=".menu-layout-affix" data-html="true" data-toggle="popover" title="Товар успешно добавлен в корзину" data-placement="bottom">
+					<svg width="35px" height="35px" viewBox="0 0 576 512">
+						<path fill="#971616" d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z"></path>
+					</svg>
+					<span class="badge cart__count badge-primary">0</span>
+				</a>
+									<a href="/" class="header-icon header-profile-icon">
+						<svg width="35px" height="35px" viewBox="0 0 512 512">
+							<path fill="#971616" d="M184 83.5l164.5 164c4.7 4.7 4.7 12.3 0 17L184 428.5c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l132-131.4H12c-6.6 0-12-5.4-12-12v-10c0-6.6 5.4-12 12-12h279.9L160 107.6c-4.7-4.7-4.7-12.3 0-17c4.6-4.7 12.2-4.7 16.9 0zM512 400V112c0-26.5-21.5-48-48-48H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c8.8 0 16 7.2 16 16v288c0 8.8-7.2 16-16 16H332c-6.6 0-12 5.4-12 12v8c0 6.6 5.4 12 12 12h132c26.5 0 48-21.5 48-48z"></path>
+						</svg>
+					</a>
+							</div>
+		</div>
+  </div>
+  <div class="header_menu">
+    <nav class="header_menu_nav">
+      <ul class="header_menu_nav_list">
+        <li class="header_main_nav_item" ><a class="header_white_link header_menu_nav_link" href="/">Хиты продаж</a></li>
+        <li class="header_main_nav_item"><a class="header_white_link header_menu_nav_link" href="/">Акции</a></li>
+        <li class="header_main_nav_item" ><a class="header_white_link header_menu_nav_link" href="/">Видео разборки</a></li>
+        <li class="header_main_nav_item header_main_nav_item_electro HoveredTooltip__trigger" ><a class="header_white_link header_menu_nav_link" href="/">О нас</a></li>
+        <li class="header_main_nav_item" ><a class="header_white_link header_menu_nav_link" href="/">Вопросы и ответы</a></li>
+        
+      </ul>
+
+        
+      </nav>
+      </div>
+</header>
+  
+ <main class="columns main">
+  <section class="sidebar">
+        <div class="homepage_catalog article">
+          <div id="catalog" class="catalog-menu-homepage">
+            <!-- Основное меню -->
+            <div class="catalog-menu-rootmenu">
+              <div class="catalog_menu_root_item sidebar_catalog"></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Кузовные детали</a></a>
+                <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div>
+              </div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Двигатель</a></a>
+
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Трансмиссия</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Ходовая часть</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Электрика</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Система зажигания</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Тормозная система</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Система охлаждения</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Рулевое управление</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Сцепление</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              <div class="catalog_menu_root_item"><a href="/" class="catalog-menu__link-wrapper"><span class="catalog_menu_root_item_icon" style="background-image: url(images/side_icon.svg);"></span><a href="/" class="catalog_menu_root_item-info catalog_menu_root_item_title">Диски и шины</a></a>
+              <div class="sidebar_submenu">
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                  <a href="/" class="catalog_menu_root_item">Кузовные детали</a>
+                </div></div>
+              
+
+            </div>
+
+            <!-- Подменю --><div id="homepage-catalog-submenu" class="homepage-catalog-rootmenu"></div></div></div>
+
+        
+      
+    
+   
+    
+   
+  </section>
+  <section class="main_column">
+    
+      
+      <div class="article-body popular">
+        <h2 class="category-title">
+          Популярные категории
+        </h2>
+        
+        <div class="column">
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/oil.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              Масла
+              </h2>
+            
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/AKB.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              АКБ
+              </h2>
+            
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/oil.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              Масла
+              </h2>
+            
+            </div>
+          </a>
+        </div>
+        <div class="column">
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/oil.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              Масла
+              </h2>
+            
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/AKB.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              АКБ
+              </h2>
+            
+            </div>
+          </a>
+          <a class="article" href="#">
+            <div class="article-image">
+              <img src="images/oil.jpg" alt="">
+            </div>
+            <div class="article-body">
+              <h2 class="article-title">
+              Масла
+              </h2>
+            
+            </div>
+          </a>
+        </div>
+        <div class="article-body popular">
+        <h2 class="category-title">
+          Последние новинки
+        </h2>
+        
+        <div class="column">
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/1748745693_0.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/766656271.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/766656271.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+        </div>
+          <div class="column">
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/1748745693_0.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/766656271.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+          <a class="article" href="#">
+          <figure class="article-image is-16by9">
+            <img src="images/766656271.jpg" alt="">
+          </figure>
+          <div class="article-body">
+            
+            <p class="article-content">
+              Дверь задняя левая Volkswagen Touran 2003-2015
+            </p>
+            
+            <footer class="article-info">
+              <h2 class="article-title">
+              6700 ₽
+            </h2>
+            </footer>
+          </div>
+        </a>
+        </div>
+        
+     
+    
+  </section>
+</main>
+<div id="footer" class="">
+    <div class="container">
+      <div class="fx-box footer-row">
+        <div class="footer-block">
+          <div class="footer-block-title">О компании</div>
+          <a class="footer-link" href="#">О нас</a>
+         
+         
+          <a class="footer-link" href="#">Юридическая информация</a>
+          <a class="footer-link" href="#">Вакансии</a>
+    
+          <a class="footer-link" href="#">Сертификаты</a>
+          <a class="footer-link" href="#">Отдел контроля качества</a>
+        </div>
+
+        <div class="footer-block">
+          <div class="footer-block-title">Покупателям</div>
+          <div class="fx-box footer-block-half-blocks">
+            <div class="footer-block-links">
+              <a class="footer-link" href="#">Как оплатить</a>
+              <a class="footer-link" href="# ">О доставке</a>
+              <a class="footer-link" href="#">Акции</a>
+              <a class="footer-link" href="#">Гарантия и возврат</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-block">
+          <div class="footer-block-title">Покупателям</div>
+          <div class="fx-box footer-block-half-blocks">
+            <div class="footer-block-links">
+              <a class="footer-link" href="#">Как оплатить</a>
+              <a class="footer-link" href="# ">О доставке</a>
+              <a class="footer-link" href="#">Акции</a>
+              <a class="footer-link" href="#">Гарантия и возврат</a>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="footer-block smi-block">
+          <div class="footer-block-title">Пресс-центр</div>
+          <a class="footer-link" href="/">Авто в разборе</a>
+          <a class="footer-link" href="/">Блог</a>
+        </div>
+
+        
+      </div>
+      <div class="footer-row fx-box">
+        
+        <div class="footer-block acquiring-block">
+          <div class="footer-block-title">Принимаем к оплате</div>
+          <div id="payment">
+           
+              
+              <img alt="mastercard, visa, paykeeper" src="images/payment.png">
+            
+          </div>
+        </div>
+
+       
+        </div>
+        <div class="fx-box footer-row">
+        <div class="footer-block-title">
+          <a class="footer-link-sitemap" href="/">©</a>1999-2023 AVTO-VAG.ru|<a class="footer-link-sitemap" href="/">Карта сайта</a>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>			
